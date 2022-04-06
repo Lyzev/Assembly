@@ -1,5 +1,10 @@
-$NOMOD51
-$INCLUDE (89C1051.MCU)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;   1st homework:                                                                   ;
+;   In a main loop there is a loop which always counts from 0 to 255.               ;
+;   The count value is to be in register r1.                                        ;
+;   When the value 255 has been reached, the count should go from 255 back to 0.    ;
+;   After that everything starts again from the beginning.                          ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 main:
     mov R1,#0 ; mov = move

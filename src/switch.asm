@@ -1,14 +1,14 @@
-; A program that switches numbers.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;   ISN'T A HOMERWORK                                                               ;                                                       ;
+;   In a main loop there is are two numbers which switch async from 0 to 1.         ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-$NOMOD51
-$INCLUDE (89C1051.MCU)
+main: ; main loop
+    mov R1,#0 ; sets the value of R1 to 0
+    mov R2,#1 ; sets the value of R2 to 1
 
-main:
-    mov R1,#0
-    mov R2,#1
+    mov R2,#0 ; sets the value of R2 to 0
+    mov R1,#1 ; sets the value of R1 to 1
 
-    mov R2,#0
-    mov R1,#1
-
-    jump main
-END
+    jump main ; jumps to the main loop
+END ; end of the program
