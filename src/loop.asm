@@ -14,7 +14,6 @@ b:
 a:
     cmp     R1,#0xFE ; cmp = compare
     jle     b ; jle = jump if less or equal
-    mov     R1,#0xFF ; mov = move
     jmp     c ; jmp = jump
 d:
     sub     R1,#0x1 ; sub = subtract
